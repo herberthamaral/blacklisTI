@@ -1,0 +1,15 @@
+BlacklistTI
+===========
+
+
+Foi chamado para aquela vaga bacana e não sabe como a empresa realmente é? É,
+nós entendemos como você se sente.
+
+Por isso criamos o BlacklisTI - uma comunidade de profissionais de TI que
+relatam (anonimamente ou publicamente) como foi (ou como está sendo) sua
+experiência de trabalho em uma determinada empresa. Note que somos também uma
+white list, portanto, comentários positivos também são muito bem vindos.
+
+Não importa se você é desenvolvedor, analista, DBA ou sysadmin: o que importa é
+que outras pessoas não caiam na mesma cilada que você e que consigam melhores
+empregos ;)
