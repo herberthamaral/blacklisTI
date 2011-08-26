@@ -13,3 +13,28 @@ white list, portanto, comentários positivos também são muito bem vindos.
 Não importa se você é desenvolvedor, analista, DBA ou sysadmin: o que importa é
 que outras pessoas não caiam na mesma cilada que você e que consigam melhores
 empregos ;)
+
+Quick Install
+=============
+
+Você irá precisar de uma versão mais recente do Python, 2.6+ deverá ser
+o suficiente. É uma boa ideia criar um `virtual environment` separado
+para essa sua instalação.
+
+Vamos baixar o `virtualenv` e configurar um novo ambiente:
+
+    # easy_install virtualenv
+    $ virtualenv --no-site-packages venv
+    $ . venv/bin/activate
+
+Instale as dependências conforme arquivo `requirements.txt`:
+
+    (venv)$ pip install -r requirements.txt
+
+Configure o SQLite:
+
+    (venv)$ python manage.py syncdb
+
+Veja em ação:
+
+    (venv)$ python manage.py runserver
