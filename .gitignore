@@ -1,3 +1,4 @@
 *.swp
 *.pyc
 dados.db
+venv/
