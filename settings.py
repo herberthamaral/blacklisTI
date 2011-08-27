@@ -125,6 +125,7 @@ INSTALLED_APPS = (
     'tastypie',
     'south',
     'registration',
+    'profile',
 )
 
 # A sample logging configuration. The only tangible logging

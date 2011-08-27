@@ -217,3 +217,9 @@ footer a.by{
 footer a.up{
 	float:right;
 }
+
+ul.errorlist li {
+   list-style: none;
+   border: 1px dotted black;
+   background-color: red;
+}
