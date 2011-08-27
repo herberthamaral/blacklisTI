@@ -10,7 +10,6 @@ class Review(models.Model):
     contras = models.CharField(max_length = 400)
     rating = models.IntegerField()
 
-
     def save(self, **kwargs):
         if self.rating > 5:
             raise ValidationError('Rating não pode ser maior que 5')
@@ -20,3 +19,7 @@ class Review(models.Model):
 
 class Empresa(models.Model):
     nome = models.CharField(max_length = 50)
+
+class Comentarios(models.Model):
+    review = models.ForeignKey(Review)
+    comentario = models.CharField(max_length = 400)

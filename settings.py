@@ -126,7 +126,7 @@ INSTALLED_APPS = (
     'south',
     'registration',
     'profile',
-    'reviews',
+    'review',
 )
 
 # A sample logging configuration. The only tangible logging

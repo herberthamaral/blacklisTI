@@ -18,6 +18,7 @@ urlpatterns = patterns('',
     # url(r'^admin/', include(admin.site.urls)),
     (r'^accounts/', include('registration.urls')),
     (r'^accounts/profile/', include('profile.urls')),
+    (r'^review/', include('review.urls')),
 )
 
 if settings.DEBUG:
