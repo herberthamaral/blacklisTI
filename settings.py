@@ -149,4 +149,4 @@ LOGGING = {
         },
     }
 }
-ACCOUNT_ACTIVATION_DAYS = 7
+LOGIN_URL = '/profile/login/'

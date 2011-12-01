@@ -38,9 +38,13 @@
                                 
                 <nav class="clear"> <!-- The nav link semantically marks your main site navigation -->
                     <ul>
-                        <li><a href="/accounts/signin">SignIn</a></li>
-                        <li><a href="#article1">Signup</a></li>
-                        <li><a href="#article2">Ranking</a></li>
+                        {% if request.user.is_authenticated %}
+                        <li><a href="/profile/logout/">Logout</a></li>
+                        {% else %}
+                        <li><a href="/profile/login/">SignIn</a></li>
+                        <li><a href="/profile/signup/">Signup</a></li>
+                        {% endif %}
+                        <li><a href="/review/ranking/">Ranking</a></li>
                         <li><a href="#article3">About</a></li>
                     </ul>
                 </nav>

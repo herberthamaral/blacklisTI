@@ -1,0 +1,11 @@
+{% extends "template.html" %}
+{% block content %}
+<p>
+    <form action="/profile/signup/" method="post">
+        {%csrf_token%}
+        {{form.as_p}}
+        <input type="hidden" name="redirect_to" value="/profile/" />
+        <input type="submit" />
+    </form>
+</p>
+{% endblock content %}
