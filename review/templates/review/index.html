@@ -1,0 +1,26 @@
+{% extends "template.html" %}
+
+{% block content %}
+<p>
+<h2>Bem vindo, {{user.username}}</h2>
+
+
+<h3>Lista de reviews</h3>
+
+{% for review in reviews %}
+<div style="border-bottom: 1px dotted black;">
+
+    <p>Usuario: {{review.user}}</p>
+    <p>Empresa: {{review.empresa}}</p>
+    <p>Nota (1 a 5): {{review.rating}}</p>
+    <p>Pros: {{review.pros}}</p>
+    <p>Contras: {{review.contras}}</p>
+    {% if review.user == request.user or request.user.is_superuser %}
+        <p><strong>Opcoes:</strong> excluir | alterar </p>
+    {% endif %}
+</div>
+{% endfor %}
+
+<a href="/review/adicionar/">Adicionar review</a>
+</p>
+{% endblock content %}

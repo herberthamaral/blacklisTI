@@ -40,6 +40,7 @@
                     <ul>
                         {% if request.user.is_authenticated %}
                         <li><a href="/profile/logout/">Logout</a></li>
+                        <li><a href="/review/">Reviews</a></li>
                         {% else %}
                         <li><a href="/profile/login/">SignIn</a></li>
                         <li><a href="/profile/signup/">Signup</a></li>

@@ -19,7 +19,10 @@ class Review(models.Model):
 
 class Empresa(models.Model):
     nome = models.CharField(max_length = 50)
+    def __unicode__(self):
+        return self.nome
 
 class Comentarios(models.Model):
     review = models.ForeignKey(Review)
     comentario = models.CharField(max_length = 400)
+

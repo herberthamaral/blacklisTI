@@ -1,0 +1,17 @@
+{% extends "template.html" %}
+
+{% block content %}
+<p>
+<h2>Bem vindo, {{user.username}}</h2>
+
+
+<h3>Adicionar review</h3>
+
+<form action="/review/adicionar/" method="post">
+    {%csrf_token%}
+    {{form.as_p}}
+    <input type="submit" />
+</form>
+
+</p>
+{% endblock content %}
